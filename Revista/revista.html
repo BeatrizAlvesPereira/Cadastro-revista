@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "description" content = "Cadastro para revista.">
+        <meta name = "robots" content = "noindex, nofollow">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Revista</title>
+        <link rel = "stylesheet" type = "text/css" href = "CSS/revista.css"/>
+    </head>
+    <body>
+
+        <!-- 1° serção - Cabeçalho -->
+        <header>
+            <h1>Revista</h1>
+        </header>
+
+        <!-- Página principal -->
+        <main>
+
+            <!-- 2° serção - Formulário de cadastramento -->
+            <section>
+                <h2>Cadastro</h2>
+                <p>Estamos lançando uma nova revista e enviaremos o primeiro exemplar grátis para todos que se cadastrarem hoje no site.</p>
+
+                <!-- Formulário -->
+                <form method = "post" action = "https://www.devmedia.com.br/codigos/formularios/aula8/">
+
+                    <!-- 1° fieldset -->
+                    <fieldset>
+                        <legend>Dados de contato</legend>
+
+                        <label>Nome:</label>
+                        <input type = "text" name = "nome" placeholder = "Digte seu nome completo" required/>
+                        <label>Email:</label>
+                        <input type = "email" name = "email" placeholder = "exemplo@email.com" required/>
+                        <label>Telefone:</label>
+                        <input type = "tel" name = "telefone" placeholder = "(XX) XXXXX-XXXX" required/>
+                    </fieldset>
+
+                    <!-- 2° fieldset -->
+                    <fieldset>
+                        <legend>Dados de entrega</legend>
+                        
+                        <label>Endereço:</label>
+                        <input type = "text" name = "endereco" placeholder = "Rua, Avenida, Travessa..." required/>
+                        <label>Número:</label>
+                        <input type = "number" name = "numero" required/>
+                        <label>Complemento:</label>
+                        <input type = "text" name = "complemento" required/>
+                    </fieldset>
+
+                    <button type = "submit">Cadastrar</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- 3° serção - Rodapé -->
+        <footer>
+            <p>&copy;Copyright 2022 - Revista</p>
+            <p>Desenvolvido por <span>Beatriz Alves</span></p>
+        </footer>
+    </body>
+</html>
